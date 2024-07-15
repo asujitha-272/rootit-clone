@@ -1,0 +1,57 @@
+.popup__content {
+    padding: 60px;
+}
+.popup__title {
+    margin-bottom: 20px;
+}
+
+.popup__watermark {
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+}
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 40px !important;
+}
+
+.button__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+.close__icon {
+    font-size: 30px !important;
+}
+
+input[type="file" i]::-webkit-file-upload-button {
+    background-color: black;
+    cursor: pointer;
+    padding: 12px 20px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .popup__content {
+        padding: 20px;
+    }
+
+    .popup__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .popup__watermark {
+        width: 100px;
+        right: 50%;
+        z-index: 1;
+    }
+}

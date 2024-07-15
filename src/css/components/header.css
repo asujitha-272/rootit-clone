@@ -1,0 +1,102 @@
+.header {
+    height: 65vh;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #151517;
+    background-image: url(https://www.rootit.in/_next/static/media/Main%20gif.feee1d78.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__content {
+    color: white;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.header__description {
+    width: 40%;
+}
+
+.header__loader {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+}
+
+.header__loader img {
+    width: 100%;
+}
+
+.header__loader2 {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 1;
+    width: 30px;
+}
+
+.header__loader2 img {
+    width: 100%;
+}
+
+.cursor__dashboard {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.cursor__software {
+    position: absolute;
+    top: 20%;
+    right: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 80vh;
+    }
+    .header__loader {
+        position: relative;
+        right: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 30px;
+    }
+    .header__description {
+        width: 80%;
+    }
+    .cursor__dashboard {
+        position: absolute;
+        top: 55%;
+        left: 5%;
+        height: 30px;
+    }
+    .cursor__software {
+        position: absolute;
+        top: 30%;
+        right: 30%;
+        height: 30px;
+    }
+}
